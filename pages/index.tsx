@@ -5,6 +5,7 @@ import Button from "../components/Button/Button";
 import { Tag } from "../components/Tag/Tag";
 import { P } from "../components/P/P";
 import { Rating } from "../components/Rating/Rating";
+import { withLayout } from "../layout/Layout";
 
 const Home: NextPage = () => {
     const [rating, setRating] = useState<number>(4);
@@ -23,4 +24,4 @@ const Home: NextPage = () => {
     );
 };
 
-export default Home;
+export default withLayout(Home);
