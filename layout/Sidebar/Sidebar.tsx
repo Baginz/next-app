@@ -7,8 +7,8 @@ import Logo from '../logo.svg';
 
 export const Sidebar = ({ className, ...props }: SidebarProps): JSX.Element => {
 	return (
-		<div>
-			<Logo />
+		<div className={cn(className, styles.sidebar)} {...props}>
+			<Logo className={styles.logo} />
 			
 			<Menu />
 		</div>
